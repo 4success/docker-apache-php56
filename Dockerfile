@@ -14,7 +14,8 @@ RUN apt-get update && \
       php5-json \
       php5-ldap \
       php5-mysql \
-      php5-pgsql
+      php5-pgsql \
+      php5-mcrypt
 
 COPY apache_default /etc/apache2/sites-available/000-default.conf
 COPY run /usr/local/bin/run
